@@ -51,4 +51,21 @@ public class UserService {
     public void deleteUser(Long id) {
         userRepository.deleteById(id);
     }
+
+    // Login operation
+    public Optional<User> login(String username, String password) {
+        // Find user by username
+        Optional<User> userOptional = userRepository.findByUsername(username);
+
+        // If user exists, check password
+        if (userOptional.isPresent()) {
+            User user = userOptional.get();
+            if (user.getPassword().equals(password)) {
+                return Optional.of(user); // Password matched, return user
+            }
+        }
+
+        // If user not found or password doesn't match, return empty optional
+        return Optional.empty();
+    }
 }

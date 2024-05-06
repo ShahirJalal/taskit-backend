@@ -10,7 +10,7 @@ public class CorsConfiguration implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/api/**")
-                .allowedOrigins("http://localhost:4200", "https://demo-user-ed257fb2708d.herokuapp.com")
+                .allowedOrigins("http://localhost:4200", "https://taskit-angular-frontend-5ad063cdf2a4.herokuapp.com/")
                 .allowedMethods("GET", "POST", "PUT", "DELETE")
                 .allowedHeaders("*")
                 .allowCredentials(true);

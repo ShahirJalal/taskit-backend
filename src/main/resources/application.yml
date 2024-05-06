@@ -3,7 +3,7 @@ spring:
     name: demo
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/DemoDB
+    url: jdbc:postgresql://localhost:5432/TaskitDB
     username: postgres
     password: shahirdb
 

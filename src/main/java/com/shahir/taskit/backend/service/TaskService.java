@@ -41,6 +41,7 @@ public class TaskService {
             existingTask.setTitle(newTask.getTitle());
             existingTask.setDescription(newTask.getDescription());
             existingTask.setUrgency(newTask.getUrgency());
+            existingTask.setStatus(newTask.getStatus());
             return taskRepository.save(existingTask);
         } else {
             throw new RuntimeException("Task not found with id: " + id);

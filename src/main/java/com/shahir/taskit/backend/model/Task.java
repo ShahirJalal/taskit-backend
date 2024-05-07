@@ -24,4 +24,7 @@ public class Task {
 
     @Column(name = "urgency", nullable = false)
     private String urgency;
+
+    @Column(name = "status", nullable = false)
+    private String status;
 }

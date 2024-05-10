@@ -41,6 +41,7 @@ public class UserService {
             existingUser.setUsername(newUser.getUsername());
             existingUser.setPassword(newUser.getPassword());
             existingUser.setEmail(newUser.getEmail());
+            existingUser.setRole(newUser.getRole());
             return userRepository.save(existingUser);
         } else {
             throw new RuntimeException("User not found with id: " + id);

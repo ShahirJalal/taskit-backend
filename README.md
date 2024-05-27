@@ -31,11 +31,6 @@ The application is deployed on Heroku. You can visit the live application at:
 
 https://taskit-angular-frontend-5ad063cdf2a4.herokuapp.com
 
-
-## Contributing
-
-We welcome contributions! Please fork the repository and create a pull request with your changes. Make sure to follow the coding standards and include relevant tests for your code.
-
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.

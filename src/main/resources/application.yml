@@ -13,3 +13,9 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: update
+
+server:
+  port: 8081
+
+admin:
+  api-key: X7K9P-4M2N8-Q1R5T-9J3H6-W8L2F

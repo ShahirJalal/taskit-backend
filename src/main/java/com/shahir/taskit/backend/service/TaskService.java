@@ -18,12 +18,10 @@ public class TaskService {
         this.taskRepository = taskRepository;
     }
 
-    // Create operation
     public Task createTask(Task task) {
         return taskRepository.save(task);
     }
 
-    // Read operation
     public List<Task> getAllTasks() {
         return taskRepository.findAll();
     }
@@ -32,7 +30,6 @@ public class TaskService {
         return taskRepository.findById(id);
     }
 
-    // Update operation
     public Task updateTask(Long id, Task newTask) {
         Optional<Task> optionalTask = taskRepository.findById(id);
         if (optionalTask.isPresent()) {
@@ -48,8 +45,11 @@ public class TaskService {
         }
     }
 
-    // Delete operation
     public void deleteTask(Long id) {
         taskRepository.deleteById(id);
+    }
+
+    public List<Task> getTasksByUsername(String username) {
+        return taskRepository.findByUsername(username);
     }
 }
